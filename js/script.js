@@ -1,7 +1,7 @@
 function init(){
   
 var fc = document.getElementById('entryinput')
-		//use fc.value in inspector to see the input value
+
 		alert(fc.value);
 		fc.value = "words";	
 
