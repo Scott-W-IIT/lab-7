@@ -1,22 +1,12 @@
 function init(){
-  
-var fc = document.getElementById('entryinput')
-
-		alert(fc.value);
-		fc.value = "words";	
-
-  document.getElementById("textoutput").innerHTML = fc.value;
+  document.getElementById("entrybutton").addEventListener("click", myalert);
+  document.getElementById("entrybutton").addEventListener("click", output);
+} 
+function myalert(){
+  alert("Scott's Website: " + document.getElementById("entryinput").value);
 }
-
-
-
-
-var x = document.getElementById('container');
-x.addEventListener('click', init);
-x.addEventListener('click', function(){
-  console.log('I was Clicked!');
-  x.innerHTML = 'entryinput';
-		});
-
+function output(){
+  document.getElementById("textoutput").innerHTML = document.getElementById("entryinput").value;
+}
 
 window.addEventListener('load', init);
