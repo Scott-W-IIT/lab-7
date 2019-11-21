@@ -1,14 +1,11 @@
 function init() {
-  document.getElementById("entrybutton").addEventListener("click", myalert);
-  document.getElementById("entrybutton").addEventListener("click", output);
-}
-function myalert() {
-  alert("Scott's Website: " + document.getElementById("entryinput").value);
-}
-function output() {
-  document.getElementById("textoutput").innerHTML = document.getElementById(
-    "entryinput"
-  ).value;
-}
+   var button = document.getElementById('entrybutton');
+  var text = document.getElementById('entryinput');
+  var showresults = document.getElementById('textoutput');
 
-window.addEventListener("load", init);
+  button.addEventListener('click', function() {
+    window.alert('Scotts website says: ' + text.var);
+  });
+
+  button.addEventListener('click', function() {
+    showresults.innerHTML = text.entryinput;
